@@ -4,11 +4,27 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//Fake comments
+//Custom event
+function emitComment(id) {
+	setInterval(() => {
+		//dispatch phạm vi window-> bất cứ component nào chạy cũng sẽ dispatch được
+		window.dispatchEvent(
+			new CustomEvent(`lesson-${id}`, {
+				detail: `The comment of lesson ${id}`,
+			})
+		);
+	}, 2000);
+}
+
+emitComment(1);
+emitComment(2);
+emitComment(3);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

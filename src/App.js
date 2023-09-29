@@ -13,6 +13,7 @@ import Content from './Content.js';
 import Resize from './Resize.js';
 import Timers from './useEffect/Timers';
 import ChangeAvatar from './useEffect/ChangeAvatar';
+import Comment from './useEffect/Comment';
 
 const App = () => {
 	const [toggle, setToggle] = useState(false);
@@ -29,7 +30,8 @@ const App = () => {
 			{/* {toggle && <Content />} */}
 			{/* {toggle && <Resize />} */}
 			{/* {toggle && <Timers />} */}
-			{toggle && <ChangeAvatar />}
+			{/* {toggle && <ChangeAvatar />} */}
+			{toggle && <Comment />}
 		</div>
 	);
 };
