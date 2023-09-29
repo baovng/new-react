@@ -27,9 +27,10 @@ const Timers = () => {
 		const timer2 = setInterval(() => {
 			setCountdown((prevState) => prevState - 1);
 		}, 1000);
+
 		return () => {
 			// clearTimeout(timer);
-			clearTimeout(timer2);
+			clearInterval(timer2);
 		};
 	}, []);
 

@@ -12,6 +12,7 @@ import { useState, useEffect } from 'react';
 import Content from './Content.js';
 import Resize from './Resize.js';
 import Timers from './useEffect/Timers';
+import ChangeAvatar from './useEffect/ChangeAvatar';
 
 const App = () => {
 	const [toggle, setToggle] = useState(false);
@@ -27,7 +28,8 @@ const App = () => {
 			</button>
 			{/* {toggle && <Content />} */}
 			{/* {toggle && <Resize />} */}
-			{toggle && <Timers />}
+			{/* {toggle && <Timers />} */}
+			{toggle && <ChangeAvatar />}
 		</div>
 	);
 };
