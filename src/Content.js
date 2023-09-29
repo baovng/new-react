@@ -1,3 +1,16 @@
+/*
+1.useEffect(callback)
+- Gọi callback mỗi khi component re-render
+- Gọi callback sau khi component thêm element vào DOM
+2. useEffect(callback,[])
+- Gọi callback once at the initial
+3. useEffect(callback,[deps])
+- Gọi callback whenever deps changed 
+
+
+useEffect(()=>{...},[])
+*/
+
 import { useEffect, useState } from 'react';
 
 const tabs = ['posts', 'comments', 'albums'];

@@ -1,3 +1,12 @@
+/*
+
+useState :
+
+const [state,setState] = useState(init)
+
+
+*/
+
 import './App.css';
 import { useState, useEffect } from 'react';
 import Content from './Content';
