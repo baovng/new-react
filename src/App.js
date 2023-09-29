@@ -14,7 +14,7 @@ import Resize from './Resize.js';
 import Timers from './useEffect/Timers';
 import ChangeAvatar from './useEffect/ChangeAvatar';
 import Comment from './useEffect/Comment';
-
+import ContentLE from './useLayoutEffeect/ContentLE';
 const App = () => {
 	const [toggle, setToggle] = useState(false);
 
@@ -31,7 +31,10 @@ const App = () => {
 			{/* {toggle && <Resize />} */}
 			{/* {toggle && <Timers />} */}
 			{/* {toggle && <ChangeAvatar />} */}
-			{toggle && <Comment />}
+			{/* {toggle && <Comment />} */}
+
+			{/* content of useLayoutEffect */}
+			{toggle && <ContentLE />}
 		</div>
 	);
 };
