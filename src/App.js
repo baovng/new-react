@@ -15,6 +15,7 @@ import Timers from './useEffect/Timers';
 import ChangeAvatar from './useEffect/ChangeAvatar';
 import Comment from './useEffect/Comment';
 import ContentLE from './useLayoutEffeect/ContentLE';
+import ContentRef from './useRef/ContentRef';
 const App = () => {
 	const [toggle, setToggle] = useState(false);
 
@@ -25,7 +26,7 @@ const App = () => {
 					setToggle(!toggle);
 				}}
 			>
-				Toggle
+				Reset
 			</button>
 			{/* {toggle && <Content />} */}
 			{/* {toggle && <Resize />} */}
@@ -34,7 +35,9 @@ const App = () => {
 			{/* {toggle && <Comment />} */}
 
 			{/* content of useLayoutEffect */}
-			{toggle && <ContentLE />}
+			{/* {toggle && <ContentLE />} */}
+
+			{toggle && <ContentRef />}
 		</div>
 	);
 };
